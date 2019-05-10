@@ -3,7 +3,7 @@
     $action = $_POST["action"];
 
     // Create connection
-    $conn = new PDO ("mysql:host=localhost;dbname=webapp;", "ivancris", "mypass");
+    $conn = new PDO ("mysql:host=remotemysql.com;dbname=cH8zLP9Lba;", "cH8zLP9Lba", "4fXoZk8jiK");
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -21,13 +21,9 @@
                 
     } elseif (isset($_SESSION['loggeduser'])) {
         
-        $conn = new PDO ("mysql:host=localhost;dbname=webapp;", "ivancris", "mypass");
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        } 
+        
         $sql = "SELECT * FROM users WHERE username='$_SESSION[loggeduser]'";
-            
+         
         $row = $conn->query($sql)->fetch();
         
         if ($row == false) {
@@ -49,7 +45,7 @@
                 $message= "invalid date of birth format";
             }
             
-            $activity_lev = $row[activity_lev];
+            $activitylev = $row[activity_lev];
             $email = $row[email];
             $username = $row[username];
             
@@ -429,7 +425,7 @@
                         <label for='newemail'>Email</label><br>
                         <input name='newemail' id='newemail' type="email" class='inputbox' value='<?php echo $email ?>' readonly/><br/>
                         <label for='newusername'>Username</label><br>
-                        <input name='newusername' id='newusername' class='inputbox' value='<?php echo $name ?>' readonly/><br/>
+                        <input name='newusername' id='newusername' class='inputbox' value='<?php echo $_SESSION[loggeduser] ?>' readonly/><br/>
                         <label for='newpassword'>Password</label><br>
                         <input name='newpassword' id='newpassword' type='password' class='inputbox'/><br/>
                         <label for='confirm_password'>Confirm Password</label><br>

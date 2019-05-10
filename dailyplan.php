@@ -3,7 +3,7 @@
     $action = $_POST["action"];
 
     // Create connection
-    $conn = new PDO ("mysql:host=localhost;dbname=webapp;", "ivancris", "mypass");
+    $conn = new PDO ("mysql:host=remotemysql.com;dbname=cH8zLP9Lba;", "cH8zLP9Lba", "4fXoZk8jiK");
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

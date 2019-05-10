@@ -3,7 +3,8 @@
 }
 
 section {
-    width: 500px;
+    padding-bottom: 100px;
+    width: 300px;
     text-align: center;
     margin: 0 auto;
 }
