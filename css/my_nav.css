@@ -1,0 +1,45 @@
+#logo {
+    height: 60px;
+}
+
+.nav_bar {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align:center;
+    height:100px;
+    background-color: white;
+    border-bottom: 1px solid red;
+    margin-top: -104px;
+    padding-left: 400px;
+
+}
+
+.nav_bar ul {
+    /*
+    margin: 0;
+    */
+}
+
+.nav_bar li, .nav_bar a {
+    margin-top: 29px;
+    display: inline-block;
+    float: left;
+}
+
+.nav_bar a {
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    
+    font-weight: bold ;
+    color: black;
+    width: 120px;
+}
+
+.nav_bar li a.active, .nav_bar li a:hover:not(.active) {
+    color: red;
+}
+
+
+

@@ -1,0 +1,55 @@
+.slicknav_menu {
+    
+    display:none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+@media screen and (max-width:992.98px) 
+{
+    
+    .nav_bar {
+        display: none;
+    }
+    .slicknav_btn {
+        background-color: red;
+        padding: 7px 10px 7px 10px;
+    }
+    
+    a.scroll {
+    text-align: center;
+    }
+    
+    .slicknav_nav a {
+    color: black;
+    }
+    
+    .slicknav_menu {
+        display: inline-block;
+        position: fixed;
+        background: transparent;
+        top: 0;
+        right: 0;
+        width:100%;
+        background: transparent;
+        color: black;
+       /* border-bottom: 1px solid red; */
+    }
+    
+    .slicknav_menu .slicknav_menutxt {
+    text-shadow: 0 1px 5px black;
+}
+    
+    #logo {
+        max-height: 44px;
+        position:relative;
+    }
+    
+    slicknav_btn slicknav_collapsed {
+       
+    }
+    
+}

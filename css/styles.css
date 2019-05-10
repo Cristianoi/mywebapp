@@ -1,0 +1,133 @@
+#register_form {
+    display: none;
+}
+
+section {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section label {
+    display: inline-block;
+    margin: 0 auto;
+    width: 250px;
+    text-align: left;
+}
+
+.inputbox {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]{
+    background-color: lightblue;
+  border:
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+html {
+    height: 100%;
+    
+}
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	font-size:100%;
+    background: #1bbcf7 ;
+    
+}
+
+
+
+#register_form {
+    position: relative;
+}
+
+#register_form input[type=number]{
+    width: 50px;
+}
+
+#dateofbirth {
+    width: 12%;
+    text-align: center;
+}
+
+#login_form {
+}
+
+#loginButton {
+    display: none;
+}
+
+
+
+
+
+.day {
+    text-align: left;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+
+.mobile-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3.778rem;
+    background: grey;
+    
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-bottom-bar .footer-link {
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+  text-transform: uppercase;
+    text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  padding: 0.907rem 1rem;
+}
+
+.mobile-bottom-bar .footer-link i.fa {
+  opacity: 0.8;
+  margin-right: 0.625rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.mobile-bottom-bar .footer-link:focus, .mobile-bottom-bar .footer-link:active {
+  color: #0c3e5f;
+}
+
+.mobile-bottom-bar .footer-text {
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: white;
+}
+
